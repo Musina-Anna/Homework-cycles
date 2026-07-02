@@ -2,14 +2,55 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Задача 1");
+        for (int i = 1; i <= 10; i = i + 1) {
+            System.out.println(i);
+        }
+        System.out.println("Задача 2");
+        for (int i = 10; i >= 1; i = i - 1) {
+            System.out.println(i);
+        }
+        System.out.println("Задача 3");
+        for (int i = 0; i <= 17; i = i + 2) {
+            System.out.println(i);
+        }
+        System.out.println("Задача 4");
+        for ( int i = 10; i >= -10;i = i-1){
+            System.out.println(i);
+        }
+        System.out.println("Задача 5");
+        for (int i = 1904; i <= 2096; i = i + 4) {
+            System.out.println(i + " год является високосным");
+        }
+        System.out.println("Задача 6");
+        for (int i = 7; i <= 98; i = i + 7) {
+            System.out.println(i);
+        }
+        System.out.println("Задача 7");
+        for (int i = 1; i <= 512; i = i * 2) {
+            System.out.println(i);
+        }
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        System.out.println("Задача 8");
+        int salary = 29000;
+        int total = 0;
+        for (int i = 1; i <= 12; i++) {
+            total = total + salary;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
+        }
+        System.out.println("Задача 9");
+        int pay = 29000;
+        float subTotal = 0;
+        float procent = 0.01f;
+        for (int i = 1; i <= 12; i++) {
+            subTotal = (subTotal + pay) * (1 + procent);
+            System.out.println("Месяц " + i + " сумма накоплений равна " + subTotal + " рублей");
+        }
+
+        System.out.println("Задача 10");
+        int y = 2;
+        for (int i = 1; i < 10; i++) {
+            System.out.println(y + " * " + i + " = " + (i * y));
         }
     }
 }
